@@ -1,3 +1,6 @@
+import '../../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../../node_modules/bootstrap/dist/js/bootstrap.js'
+
 export function HeroBanner() {
     return (
         <div>
@@ -7,7 +10,7 @@ export function HeroBanner() {
                     A front-end web developer
                 </h1>
                 {/* I need to get a Bootstrap button component used for this button: */}
-                <button>See my work...</button>
+                <button type="button" className="btn btn-info"><a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a></button>
             </div>
         </div>
     )
