@@ -1,7 +1,7 @@
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.js'
 
-export function HeroBanner() {
+export function HeroBanner({mode}) {
     return (
         <div>
             <div className='hero-container'>
