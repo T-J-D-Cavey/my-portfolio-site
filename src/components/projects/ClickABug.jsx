@@ -1,6 +1,8 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+
+import professor from '../../assets/click-a-bug1.png';
 
 export function ClickABug({mode, modeStyles}) {
 
@@ -10,17 +12,19 @@ export function ClickABug({mode, modeStyles}) {
 
     let ctaButton = modeStyles[mode].ctaButton;
     let secondaryButton = modeStyles[mode].secondaryButton;
-
-
+    let backgroundColor = modeStyles[mode].projectBackgroundOne;
+    let color = modeStyles[mode].color;
 
 
     return (
         <div>
-          <section>
+          <section style={{backgroundColor: backgroundColor, color: color}}>
             <h3>Click-A-Bug</h3>
             <p>An online game to test your reactions: can you save the professor from the bugs in his servers?
             </p>
-            <h4>*Picture to go here</h4>
+            <div className='projectPicMainContainer flexBoxCenter'>
+              <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+            </div>
             <Button variant={secondaryButton} onClick={handleShow}>
               See details
             </Button>
@@ -30,10 +34,10 @@ export function ClickABug({mode, modeStyles}) {
           </section>
           {/* Modal: */}
           <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
+            <Modal.Header closeButton style={{backgroundColor: backgroundColor, color: color}}>
               <Modal.Title>Click-a-bug</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body style={{backgroundColor: backgroundColor, color: color}}>
               <p>An online game to test your reactions: can you save the professor from the bugs in his servers?
               </p>
               <h4>TECHNOLOGIES USED:</h4>
@@ -45,9 +49,11 @@ export function ClickABug({mode, modeStyles}) {
                   <li>Some tech used</li>
                   <li>Netlify</li>
               </ul>
-              <h3>Image to go here</h3>
+              <div className='projectPicMainContainer flexBoxCenter'>
+                <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+              </div>
             </Modal.Body>
-            <Modal.Footer>
+            <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>
               <Button variant={secondaryButton} onClick={handleClose}>
                 Close
               </Button>

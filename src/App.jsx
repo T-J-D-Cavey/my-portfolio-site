@@ -15,15 +15,19 @@ export function App() {
     const oppositeMode = mode === 'darkMode' ? 'lightMode' : 'darkMode';
     setMode(oppositeMode);
   }
-
+// These styles all need adjusting (jut not the ones specific to bootstrap)
   const modeStyles = {
     darkMode: {
       ctaButton: 'light',
       secondaryButton: 'outline-light',
+      color: 'white',
+      projectBackgroundOne: 'black',
     },
     lightMode: {
       ctaButton: 'dark',
       secondaryButton: 'outline-dark',
+      color: 'black',
+      projectBackgroundOne: 'white',
     },
   };
 
