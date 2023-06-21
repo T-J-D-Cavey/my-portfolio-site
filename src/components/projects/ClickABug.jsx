@@ -17,18 +17,28 @@ export function ClickABug({mode, modeStyles}) {
 
 
     return (
-        <div>
-          <section style={{backgroundColor: backgroundColor, color: color}}>
-            <h3>Click-A-Bug</h3>
-            <p>An online game to test your reactions: can you save the professor from the bugs in his servers?
-            </p>
-            <div className='projectPicMainContainer flexBoxCenter'>
-              <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+        <div style={{backgroundColor: backgroundColor, color: color}}>
+          <section className='projectSection'>
+            <div className='projectTextAndImageContainer'>
+              <div className='projectsTextContainer'>
+                <h3>Click-A-Bug</h3>
+                <div>
+                  <p>An online game to test your reactions: can you save the professor from the bugs in his servers?</p>
+                  <ul>
+                    <li>Demo project</li>
+                    <li>Made with React</li>
+                    <li>SPA hosted on Netlify</li>
+                  </ul>
+                </div>
+              </div>
+              <div className='projectPicMainContainer flex flexCenter'>
+                <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+              </div>
             </div>
-            <Button variant={secondaryButton} onClick={handleShow}>
+            <Button variant={secondaryButton} onClick={handleShow} className='projectButton'>
               See details
             </Button>
-            <Button variant={ctaButton} onClick={handleClose}>
+            <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
                   <a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a>
             </Button>
           </section>
@@ -54,10 +64,10 @@ export function ClickABug({mode, modeStyles}) {
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>
-              <Button variant={secondaryButton} onClick={handleClose}>
+              <Button variant={secondaryButton} onClick={handleClose} className='projectButton'>
                 Close
               </Button>
-              <Button variant={ctaButton} onClick={handleClose}>
+              <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
                 <a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a>
               </Button>
             </Modal.Footer>

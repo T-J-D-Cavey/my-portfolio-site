@@ -46,14 +46,77 @@ table {
 	border-spacing: 0;
 }
 
-/* --------> Utility classes */
-
-.flexBoxCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
+/* --------> Utility classes: */
+
+.flex {
+  display: flex;
+}
+
+.flexCenter {
+  background-color: red;
+  justify-content: center;
+  /* align-items: center; */
+  min-width: 15rem;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+/* --------> General styles: */
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+li {
+
+}
+/* --------> Project section styles: */
+
+.projectSection {
+  padding: 2rem 0;
+  max-width: 80rem;
+  background-color: green;
+  margin: 0 auto;
+}
+
+.projectTextAndImageContainer {
+  background-color: orange;
+  margin-bottom: 2rem;
+}
+
+.projectsTextContainer {
+  background-color: blue;
+  margin: 0 auto 2rem auto;
+  max-width: 20rem;
+}
+
+.projectsTextContainer h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 
 .projectPicMainContainer {
   overflow: hidden;
@@ -61,22 +124,52 @@ table {
 
 .projectPicMain {
   /* need to be bigger on bigger screens */
-  animation: moveAnimation 15s linear infinite;
+  animation: moveAnimation 10s linear infinite;
   transform-origin: center;
-  width: 10rem;
+  width: 8rem;
 }
 
 @keyframes moveAnimation {
   0% {
-    transform: translateY(0) scale(2);
+    transform: translateY(20px) scale(2);
   }
   50% {
-    transform: translateY(100px) scale(2);
+    transform: translateY(80px) scale(2);
   }
   100% {
-    transform: translateY(0) scale(2);
+    transform: translateY(20px) scale(2);
   }
 }
 
-body {
+.projectButton {
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+/* --------> Tablet and desktop screen styles: */
+
+@media screen and (min-width: 700px) {
+  .projectSection {
+    padding: 7rem 0;
+  }
+
+  .projectTextAndImageContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 35rem;
+  }
+
+  .projectPicMain {
+    min-width: 25rem;
+  }
+
+  .projectsTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:start;
+    height: 30rem;
+  }
 }
