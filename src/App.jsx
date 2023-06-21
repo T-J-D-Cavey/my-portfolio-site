@@ -16,11 +16,22 @@ export function App() {
     setMode(oppositeMode);
   }
 
+  const modeStyles = {
+    darkMode: {
+      ctaButton: 'light',
+      secondaryButton: 'outline-light',
+    },
+    lightMode: {
+      ctaButton: 'dark',
+      secondaryButton: 'outline-dark',
+    },
+  };
+
   return (
     <div>
       <HeroBanner mode={mode}/>
       <DarkLightButton mode={mode} changeMode={changeMode} />
-      <ProjectContainer mode={mode}/>
+      <ProjectContainer mode={mode} modeStyles={modeStyles}/>
       <Footer mode={mode}/>
     </div>
   )

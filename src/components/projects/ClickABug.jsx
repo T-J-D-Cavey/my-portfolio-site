@@ -1,19 +1,15 @@
-// import '../../../node_modules/bootstrap/dist/css/bootstrap.css'
-// import '../../../node_modules/bootstrap/dist/js/bootstrap.js'
-
-import { useState } from 'react';
+import {useState, useEffect} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-export function ClickABug({mode}) {
-
-
-
+export function ClickABug({mode, modeStyles}) {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    let ctaButton = modeStyles[mode].ctaButton;
+    let secondaryButton = modeStyles[mode].secondaryButton;
 
 
 
@@ -25,10 +21,10 @@ export function ClickABug({mode}) {
             <p>An online game to test your reactions: can you save the professor from the bugs in his servers?
             </p>
             <h4>*Picture to go here</h4>
-            <Button variant="outline-info" onClick={handleShow}>
+            <Button variant={secondaryButton} onClick={handleShow}>
               See details
             </Button>
-            <Button variant="info" onClick={handleClose}>
+            <Button variant={ctaButton} onClick={handleClose}>
                   <a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a>
             </Button>
           </section>
@@ -52,10 +48,10 @@ export function ClickABug({mode}) {
               <h3>Image to go here</h3>
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="outline-info" onClick={handleClose}>
+              <Button variant={secondaryButton} onClick={handleClose}>
                 Close
               </Button>
-              <Button variant="info" onClick={handleClose}>
+              <Button variant={ctaButton} onClick={handleClose}>
                 <a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a>
               </Button>
             </Modal.Footer>
