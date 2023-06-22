@@ -90,8 +90,8 @@ p {
   font-size: 1.2rem;
 }
 
-li {
-
+ul {
+  list-style: circle
 }
 /* --------> Project section styles: */
 
@@ -120,6 +120,10 @@ li {
   margin-bottom: 1rem;
 }
 
+.projectsTextContainer p {
+  max-width: 30rem;
+}
+
 .projectPicMainContainer {
   overflow: hidden;
   background-color: purple;
@@ -129,6 +133,22 @@ li {
   animation: moveAnimation 10s linear infinite;
   transform-origin: center;
   width: 8rem;
+}
+
+.projectsTextContainer ul {
+  margin: 2rem 0 0 1rem;
+}
+
+.projectsTextContainer li {
+  line-height: 1.5rem;
+}
+
+/* --------> Project modal styles: */
+
+.modalPicContainer {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes moveAnimation {
@@ -194,7 +214,10 @@ li {
   }
 
   .projectsTextContainer {
+    padding-left: 10rem;
+  }
 
-
+  .seeDetails {
+    margin-left: 9.7rem;
   }
 }

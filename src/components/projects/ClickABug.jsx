@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 import professor from '../../assets/click-a-bug1.png';
+import game from '../../assets/click-a-bug2.png';
 
 export function ClickABug({mode, modeStyles}) {
 
@@ -35,7 +36,7 @@ export function ClickABug({mode, modeStyles}) {
                 <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
               </div>
             </div>
-            <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
+            <Button variant={secondaryButton} onClick={handleShow} className='projectButton'>
               See details
             </Button>
             <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
@@ -59,8 +60,8 @@ export function ClickABug({mode, modeStyles}) {
                   <li>Some tech used</li>
                   <li>Netlify</li>
               </ul>
-              <div className='projectPicMainContainer flexBoxCenter'>
-                <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+              <div className='modalPicContainer flexBoxCenter'>
+                <img className='projectPicMain' src={game} alt='click a bug screenshot' />
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>
