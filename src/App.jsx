@@ -41,8 +41,8 @@ export function App() {
 
   return (
     <div>
-      <HeroBanner mode={mode} modeStyles={modeStyles}/>
-      <DarkLightButton mode={mode} changeMode={changeMode} />
+      <HeroBanner mode={mode} modeStyles={modeStyles} />
+      <DarkLightButton mode={mode} changeMode={changeMode} modeStyles={modeStyles} />
       <ProjectContainer mode={mode} modeStyles={modeStyles}/>
       <Footer mode={mode} modeStyles={modeStyles}/>
     </div>

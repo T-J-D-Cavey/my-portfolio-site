@@ -101,6 +101,18 @@ ul {
   list-style: circle;
   font-size: 1.2rem;
 }
+
+/* --------> Hero banner and mode button styles: */
+.modeButton {
+  border-radius: 50%;
+  /* width: 2rem;
+  height: 2rem; */
+  /* padding: 5px; */
+}
+.modeButton > img {
+  width: 2rem;
+  height: 2rem;
+}
 /* --------> Project section styles: */
 
 .projectHeaderContainer {
