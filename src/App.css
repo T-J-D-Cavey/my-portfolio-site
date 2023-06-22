@@ -100,9 +100,17 @@ p {
 ul {
   list-style: circle;
   font-size: 1.2rem;
-  font-weight: 800;
 }
 /* --------> Project section styles: */
+
+.projectHeaderContainer {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.projectHeaderContainer h2 {
+  font-size: 5rem;
+}
 
 .projectSection {
   padding: 2rem 0;

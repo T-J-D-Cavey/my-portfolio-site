@@ -21,8 +21,9 @@ export function App() {
       ctaButton: 'light',
       secondaryButton: 'outline-light',
       color: '#FAF9F6',
+      background: '#121212',
       projectBackgroundOne: '#574734',
-      projectBackgroundTwo: '#121212',
+      projectBackgroundTwo: '#333333',
       projectBackgroundThree: '#193652',
       projectBackgroundFour: '#1D1F20',
     },
@@ -30,6 +31,7 @@ export function App() {
       ctaButton: 'dark',
       secondaryButton: 'outline-dark',
       color: '#202020',
+      background: '#fafafa',
       projectBackgroundOne: '#C3E6EB',
       projectBackgroundTwo: '#F9F3F1',
       projectBackgroundThree: '#E6FFE0',
@@ -39,10 +41,10 @@ export function App() {
 
   return (
     <div>
-      <HeroBanner mode={mode}/>
+      <HeroBanner mode={mode} modeStyles={modeStyles}/>
       <DarkLightButton mode={mode} changeMode={changeMode} />
       <ProjectContainer mode={mode} modeStyles={modeStyles}/>
-      <Footer mode={mode}/>
+      <Footer mode={mode} modeStyles={modeStyles}/>
     </div>
   )
 }
