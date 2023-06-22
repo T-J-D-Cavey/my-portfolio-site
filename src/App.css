@@ -151,6 +151,15 @@ ul {
   justify-content: center;
 }
 
+.modalTextContainer > * {
+  margin-bottom: 2rem;
+}
+
+.modalTextContainer li {
+  margin-left: 2rem;
+  line-height: 1.25rem;
+}
+
 @keyframes moveAnimation {
   0% {
     transform: translateY(20px) scale(2);

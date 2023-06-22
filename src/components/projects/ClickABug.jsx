@@ -15,7 +15,7 @@ export function ClickABug({mode, modeStyles}) {
     let secondaryButton = modeStyles[mode].secondaryButton;
     let backgroundColor = modeStyles[mode].projectBackgroundOne;
     let color = modeStyles[mode].color;
-
+// I need to redo the pictures so that they're very long portrait
 
     return (
         <div style={{backgroundColor: backgroundColor, color: color}}>
@@ -26,9 +26,9 @@ export function ClickABug({mode, modeStyles}) {
                 <div>
                   <p>An online game to test your reactions: can you save the professor from the bugs in his servers?</p>
                   <ul>
-                    <li>Demo project</li>
-                    <li>Made with React</li>
-                    <li>SPA hosted on Netlify</li>
+                    <li>Demo React project</li>
+                    <li>Complex state managed by Redux</li>
+                    <li>Client-side-rendering hosted on Netlify</li>
                   </ul>
                 </div>
               </div>
@@ -46,20 +46,29 @@ export function ClickABug({mode, modeStyles}) {
           {/* Modal: */}
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton style={{backgroundColor: backgroundColor, color: color}}>
-              <Modal.Title>Click-a-bug</Modal.Title>
+              <Modal.Title>
+                <h2>Click-a-bug</h2>
+              </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{backgroundColor: backgroundColor, color: color}}>
-              <p>An online game to test your reactions: can you save the professor from the bugs in his servers?
-              </p>
-              <h4>TECHNOLOGIES USED:</h4>
-              <ul>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Some tech used</li>
-                  <li>Some tech used</li>
-                  <li>Some tech used</li>
-                  <li>Netlify</li>
-              </ul>
+              <div className='modalTextContainer'>
+                <p>
+                  Click-a-bug is a single-page-application (SPA) project showcasing React and Redux managing an app with complex state.
+                  The app imitates a 'whack-a-mole' game, where users see a grid (of servers) and have to 'click' (or tap) on any bugs that appear. 
+                  There's a timer, a score and a lives-left metric. 
+                  Click on the wrong thing or take too long, and the bugs will take over!
+                  </p>
+                <h4>TECHNOLOGIES USED:</h4>
+                <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>NPM</li>
+                    <li>CSS</li>
+                    <li>VSCode</li>
+                    <li>Git and Github</li>
+                    <li>Netlify</li>
+                </ul>
+              </div>
               <div className='modalPicContainer flexBoxCenter'>
                 <img className='projectPicMain' src={game} alt='click a bug screenshot' />
               </div>
