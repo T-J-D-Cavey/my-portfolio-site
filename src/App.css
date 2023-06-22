@@ -1,4 +1,12 @@
-/* --------> Reset CSS */
+/* --------> Variables: */
+
+:root {
+  --font-family: 'Exo 2', sans-serif;
+
+}
+
+
+/* --------> Reset CSS: */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,6 +28,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
   box-sizing: border-box;
+  font-family: var(--font-family);
 }
 
 article, aside, details, figcaption, figure, 
@@ -58,9 +67,7 @@ a {
 }
 
 .flexCenter {
-  background-color: red;
   justify-content: center;
-  /* align-items: center; */
   min-width: 15rem;
 }
 
@@ -91,28 +98,25 @@ p {
 }
 
 ul {
-  list-style: circle
+  list-style: circle;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 /* --------> Project section styles: */
 
 .projectSection {
   padding: 2rem 0;
   max-width: 80rem;
-  background-color: green;
   margin: 0 auto;
 }
 
 .projectTextAndImageContainer {
-  background-color: orange;
   margin-bottom: 2rem;
 }
 
 .projectsTextContainer {
-  background-color: blue;
-  /* margin: 0 auto 2rem auto; */
   padding: 2rem;
   margin-bottom: 2rem;
-  /* max-width: 25rem; */
 }
 
 .projectsTextContainer h3 {
@@ -126,7 +130,6 @@ ul {
 
 .projectPicMainContainer {
   overflow: hidden;
-  background-color: purple;
 }
 
 .projectPicMain {
@@ -171,11 +174,13 @@ ul {
     transform: translateY(20px) scale(2);
   }
 }
-
+/* I need to figure out a way to add the right shades of just-off white/black to the bootstrap buttons 
+{backgroundColor: '#FAF9F6', color: '#202020'}*/
 .projectButton {
   font-size: 1.2rem;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
+
 }
 
 .seeDetails {

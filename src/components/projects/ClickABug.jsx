@@ -36,7 +36,7 @@ export function ClickABug({mode, modeStyles}) {
                 <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
               </div>
             </div>
-            <Button variant={secondaryButton} onClick={handleShow} className='projectButton'>
+            <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
               See details
             </Button>
             <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
@@ -50,7 +50,7 @@ export function ClickABug({mode, modeStyles}) {
                 <h2>Click-a-bug</h2>
               </Modal.Title>
             </Modal.Header>
-            <Modal.Body style={{backgroundColor: backgroundColor, color: color}}>
+            <Modal.Body style={{backgroundColor: '#FAF9F6', color: '#202020'}}>
               <div className='modalTextContainer'>
                 <p>
                   Click-a-bug is a single-page-application (SPA) project showcasing React and Redux managing an app with complex state.
