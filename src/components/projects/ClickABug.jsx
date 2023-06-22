@@ -35,7 +35,7 @@ export function ClickABug({mode, modeStyles}) {
                 <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
               </div>
             </div>
-            <Button variant={secondaryButton} onClick={handleShow} className='projectButton'>
+            <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
               See details
             </Button>
             <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
