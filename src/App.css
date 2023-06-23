@@ -103,15 +103,23 @@ ul {
 }
 
 /* --------> Hero banner and mode button styles: */
+
 .modeButton {
-  border-radius: 50%;
-  /* width: 2rem;
-  height: 2rem; */
-  /* padding: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Unable to get position: sticky, to work */
+  position: fixed;
+  top: 0; 
+  right: 0;
+  z-index: 100;
+  margin-top: -5px;
+  margin-right: -5px;
+  border-bottom-left-radius: 50%;
 }
 .modeButton > img {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 /* --------> Project section styles: */
 
@@ -129,7 +137,7 @@ ul {
   max-width: 80rem;
   margin: 0 auto;
 }
-
+/* we may want to add flex here as well, so we can control the width of the image container and have consistent width */
 .projectTextAndImageContainer {
   margin-bottom: 2rem;
 }
@@ -150,6 +158,7 @@ ul {
 
 .projectPicMainContainer {
   overflow: hidden;
+  border-radius: 10%;
 }
 
 .projectPicMain {

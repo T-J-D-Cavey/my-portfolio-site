@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { HeroBanner } from './components/HeroBanner'
 import { DarkLightButton } from './components/DarkLightButton'
 import { ProjectContainer } from './components/ProjectContainer'
+import { CarouselComponent } from './components/Carousel'
 import { Footer } from './components/Footer'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
@@ -43,6 +44,7 @@ export function App() {
     <div>
       <HeroBanner mode={mode} modeStyles={modeStyles} />
       <DarkLightButton mode={mode} changeMode={changeMode} modeStyles={modeStyles} />
+      <CarouselComponent />
       <ProjectContainer mode={mode} modeStyles={modeStyles}/>
       <Footer mode={mode} modeStyles={modeStyles}/>
     </div>
