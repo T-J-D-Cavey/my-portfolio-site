@@ -111,16 +111,20 @@ ul {
   font-size: 5rem;
 }
 
-/* --------> Carousel styles: */
+/* --------> Hero banner styles: */
 
 .heroBanner {
+  position: relative;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .hero-container {
   text-align: center;
+  z-index: 1;
 }
 
 .hero-container > h1 {
@@ -128,6 +132,15 @@ ul {
 }
 .hero-container span {
   color: #5D3FD3;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 /* --------> Carousel styles: */
