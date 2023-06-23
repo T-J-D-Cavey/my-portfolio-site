@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { HeroBanner } from './components/HeroBanner'
 import { DarkLightButton } from './components/DarkLightButton'
 import { ProjectContainer } from './components/ProjectContainer'
-import { CarouselComponent } from './components/Carousel'
+import { CarouselComponent } from './components/CarouselComponent'
 import { Footer } from './components/Footer'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
