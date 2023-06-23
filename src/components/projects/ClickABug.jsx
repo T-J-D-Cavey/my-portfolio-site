@@ -11,10 +11,10 @@ export function ClickABug({mode, modeStyles}) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    let ctaButton = modeStyles[mode].ctaButton;
-    let secondaryButton = modeStyles[mode].secondaryButton;
-    let backgroundColor = modeStyles[mode].projectBackgroundOne;
-    let color = modeStyles[mode].color;
+    const ctaButton = modeStyles[mode].ctaButton;
+    const secondaryButton = modeStyles[mode].secondaryButton;
+    const backgroundColor = modeStyles[mode].projectBackgroundOne;
+    const color = modeStyles[mode].color;
 // I need to redo the pictures so that they're very long portrait
 
     return (

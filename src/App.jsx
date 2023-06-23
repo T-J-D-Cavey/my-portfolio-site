@@ -40,11 +40,14 @@ export function App() {
     },
   };
 
+  const backgroundColor = modeStyles[mode].background;
+  const color = modeStyles[mode].color;
+
   return (
-    <div>
+    <div style={{backgroundColor: backgroundColor, color: color}}>
       <HeroBanner mode={mode} modeStyles={modeStyles} />
       <DarkLightButton mode={mode} changeMode={changeMode} modeStyles={modeStyles} />
-      <CarouselComponent />
+      <CarouselComponent mode={mode} modeStyles={modeStyles}/>
       <ProjectContainer mode={mode} modeStyles={modeStyles}/>
       <Footer mode={mode} modeStyles={modeStyles}/>
     </div>

@@ -5,13 +5,13 @@ import { RamenPopup } from "./projects/RamenPopup"
 
 export function ProjectContainer({mode, modeStyles}) {
 
-    let backgroundColor = modeStyles[mode].background;
-    let color = modeStyles[mode].color;
+    const backgroundColor = modeStyles[mode].background;
+    const color = modeStyles[mode].color;
     // We may need to add some logic (Link or browserRouter) so that when hero banner 'see my work' is clicked, it moves to this component:
 
     return (
         <div>
-            <div style={{backgroundColor: backgroundColor, color: color}} className='projectHeaderContainer'>
+            <div style={{backgroundColor: backgroundColor, color: color}} className='headerContainer'>
                 <h2>Projects:</h2>
             </div>
             <ClickABug mode={mode} modeStyles={modeStyles} />
