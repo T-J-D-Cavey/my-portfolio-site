@@ -16,7 +16,7 @@ export function App() {
     const oppositeMode = mode === 'darkMode' ? 'lightMode' : 'darkMode';
     setMode(oppositeMode);
   }
-// These styles all need adjusting (jut not the ones specific to bootstrap)
+
   const modeStyles = {
     darkMode: {
       ctaButton: 'light',
@@ -53,5 +53,3 @@ export function App() {
     </div>
   )
 }
-
-// Add a carousel component to list the tech used for this portfolio project

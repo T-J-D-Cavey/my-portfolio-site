@@ -78,7 +78,7 @@ a {
 /* --------> General styles: */
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -109,6 +109,25 @@ ul {
 
 .headerContainer h2 {
   font-size: 5rem;
+}
+
+/* --------> Carousel styles: */
+
+.heroBanner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container {
+  text-align: center;
+}
+
+.hero-container > h1 {
+  margin-bottom: 2rem;
+}
+.hero-container span {
+  color: #5D3FD3;
 }
 
 /* --------> Carousel styles: */

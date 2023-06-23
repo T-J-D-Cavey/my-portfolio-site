@@ -1,16 +1,18 @@
-import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-import '../../node_modules/bootstrap/dist/js/bootstrap.js'
+import Button from 'react-bootstrap/Button'
 
-export function HeroBanner({mode}) {
+export function HeroBanner({mode, modeStyles}) {
+
+    const ctaButton = modeStyles[mode].ctaButton;
     return (
-        <div>
+        <div className='heroBanner'>
             <div className='hero-container'>
-                <h1>Hi, I'm Tim Cavey.
+                <h1>Hi, I'm <span>Tim Cavey</span>.
                     <br />
-                    A front-end web developer
+                    A front-end web developer.
                 </h1>
-                {/* I need to get a Bootstrap button component used for this button: */}
-                <button type="button" className="btn btn-info"><a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a></button>
+                <Button variant={ctaButton} className='projectButton'>
+                  <a href='/#projectID'>View my work</a>
+                </Button>
             </div>
         </div>
     )
