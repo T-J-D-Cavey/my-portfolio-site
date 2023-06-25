@@ -6,7 +6,6 @@ import { ProjectContainer } from './components/ProjectContainer'
 import { CarouselComponent } from './components/CarouselComponent'
 import { Footer } from './components/Footer'
 
-import { ParticlesComponent } from './components/projects/ParticlesComponent'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './App.css'
@@ -56,7 +55,6 @@ export function App() {
 
   return (
     <div style={{backgroundColor: backgroundColor, color: color}}>
-      <ParticlesComponent />
       <HeroBanner mode={mode} modeStyles={modeStyles} />
       <DarkLightButton mode={mode} changeMode={changeMode} modeStyles={modeStyles} />
       <CarouselComponent mode={mode} modeStyles={modeStyles}/>

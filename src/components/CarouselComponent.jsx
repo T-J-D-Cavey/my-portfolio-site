@@ -15,6 +15,8 @@ export function CarouselComponent({mode, modeStyles}) {
   // I need to make a white image and a black img with relevant Icons centered at the  and change the src dynamically based on the mode
 
   // I need to try and change the colour of the buttons on this so they are visible with different modes
+
+  // I need to edit the text to include a mention of tsparticles for animation
   return (
     <div className='carouselContainer'>
         <div style={{backgroundColor: backgroundColor, color: color}} className='headerContainer'>
