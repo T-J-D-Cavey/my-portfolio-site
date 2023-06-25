@@ -12,14 +12,18 @@ export function CarouselComponent({mode, modeStyles}) {
   const backgroundColor = modeStyles[mode].background;
   const color = modeStyles[mode].color;
 
+  const gradient = `linear-gradient(0deg, ${backgroundColor} 0%, #5D3FD3 100%)`
+
   // I need to make a white image and a black img with relevant Icons centered at the  and change the src dynamically based on the mode
 
   // I need to try and change the colour of the buttons on this so they are visible with different modes
 
   // I need to edit the text to include a mention of tsparticles for animation
   return (
+    <div style={{background: gradient}}>
+
     <div className='carouselContainer'>
-        <div style={{backgroundColor: backgroundColor, color: color}} className='headerContainer'>
+        <div style={{color: color}} className='headerContainer'>
           <h2 id='projectID'>This Site:</h2>
         </div>
       <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -82,6 +86,7 @@ export function CarouselComponent({mode, modeStyles}) {
         </Carousel.Item>
         </Carousel.Item>
       </Carousel>
+    </div>
     </div>
   );
 }
