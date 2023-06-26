@@ -16,11 +16,9 @@ export function CarouselComponent({mode, modeStyles}) {
 
   // I need to make a white image and a black img with relevant Icons centered at the  and change the src dynamically based on the mode
 
-  // I need to try and change the colour of the buttons on this so they are visible with different modes
-
   // I need to edit the text to include a mention of tsparticles for animation
   return (
-    <div style={{background: gradient}}>
+    <div style={{background: gradient, color: color}}>
 
     <div className='carouselContainer'>
         <div style={{color: color}} className='headerContainer'>
@@ -35,7 +33,7 @@ export function CarouselComponent({mode, modeStyles}) {
             />
           <Carousel.Caption >
             <h3 style={{color: color}}>Dynamic and Interactive</h3>
-            <p style={{color: color}}>Leveraging a modern Javascript framework in React, powered by Vite and Rollup.</p>
+            <p style={{color: color}}>Made with React, powered by Vite and Rollup. Animations by TSParticles</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -60,7 +58,7 @@ export function CarouselComponent({mode, modeStyles}) {
           <Carousel.Caption>
             <h3 style={{color: color}}>Seamless Deployment with Netlify</h3>
             <p style={{color: color}}>
-            Single-page application harnessing the power and reliability of Netlify's continuous deployment with Github</p>
+            Single-page application harnessing the power and reliability of Netlify's continuous deployment</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>

@@ -17,7 +17,7 @@ export function App() {
     const oppositeMode = mode === 'darkMode' ? 'lightMode' : 'darkMode';
     setMode(oppositeMode);
   }
-
+// I should store this object in it's own file and then import and pass it as props
   const modeStyles = {
     darkMode: {
       ctaButton: 'light',
@@ -44,14 +44,7 @@ export function App() {
   const backgroundColor = modeStyles[mode].background;
   const color = modeStyles[mode].color;
 
-
-
-
-
-
-
-
-
+  // Do I need a 'page not found' and/or a 'loading' page?
 
   return (
     <div style={{backgroundColor: backgroundColor, color: color}}>

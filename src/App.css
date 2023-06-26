@@ -158,6 +158,10 @@ ul {
   font-size: 1.6rem;
 }
 
+.carousel-indicators > button, .carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: #5D3FD3 !important;
+}
+
 /* --------> Mode button styles: */
 
 .modeButton {
@@ -250,8 +254,7 @@ ul {
     transform: translateY(20px) scale(2);
   }
 }
-/* I need to figure out a way to add the right shades of just-off white/black to the bootstrap buttons 
-{backgroundColor: '#FAF9F6', color: '#202020'}*/
+
 .projectButton {
   font-size: 1.2rem;
   margin-left: 0.3rem;
@@ -261,6 +264,55 @@ ul {
 
 .seeDetails {
   margin-left: 1.7rem;
+}
+
+/* --------> Footer styles: */
+
+.footerContainer {
+  height: 15rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer ul {
+  list-style: none;
+}
+
+.footerContainer p {
+  margin-top: 5rem;
+}
+
+.footerContainer button {
+  margin: 0 1rem;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 6px;
+}
+
+.footerContainer button:hover {
+  border-bottom: 1px solid #5D3FD3;
+}
+
+.footerContainer img {
+  width: 2.2rem;
+  height: 2rem;
+}
+
+.footerContainer ul li:nth-child(2) {
+  position: relative;
+  animation: arrowBounce 0.5s ease-out 0s infinite alternate;
+}
+
+@keyframes arrowBounce {
+  0% {
+    transform: scale(1);
+    bottom: 0;
+  }
+
+  100% {
+    transform: scale(1.5);
+    bottom: 0.75rem;
+  }
 }
 
 /* --------> Tablet screen styles: */

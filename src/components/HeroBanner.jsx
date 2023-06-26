@@ -1,9 +1,6 @@
 import Button from 'react-bootstrap/Button'
 import { ParticlesComponent } from './ParticlesComponent'
 
-
-import bug from '../assets/click-a-bug1.png'
-
 export function HeroBanner({mode, modeStyles}) {
 
     const ctaButton = modeStyles[mode].ctaButton;
@@ -11,7 +8,7 @@ export function HeroBanner({mode, modeStyles}) {
     const nameStyle = mode === 'darkMode' ? '#202020': '#FAF9F6';
 
     return (
-        <div className='heroBanner'>
+        <div className='heroBanner' id='heroBanner'>
             <div className='hero-container'>
                 <h1>Hi, I'm <span style={{color: nameStyle}}>Tim Cavey</span>.
                     <br />
