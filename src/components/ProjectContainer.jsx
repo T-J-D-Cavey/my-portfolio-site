@@ -7,7 +7,6 @@ export function ProjectContainer({mode, modeStyles}) {
 
     const backgroundColor = modeStyles[mode].background;
     const color = modeStyles[mode].color;
-    // We may need to add some logic (Link or browserRouter) so that when hero banner 'see my work' is clicked, it moves to this component:
 
     return (
         <div>

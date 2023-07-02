@@ -2,9 +2,7 @@
 
 :root {
   --font-family: 'Exo 2', sans-serif;
-
 }
-
 
 /* --------> Reset CSS: */
 
@@ -133,9 +131,6 @@ ul {
 .hero-container > h1 {
   margin-bottom: 2rem;
 }
-.hero-container span {
-  /* color: #5D3FD3; */
-}
 
 #tsparticles {
   position: absolute;
@@ -170,7 +165,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Unable to get position: sticky, to work */
   position: fixed;
   top: 0; 
   right: 0;
@@ -314,6 +308,60 @@ ul {
   100% {
     transform: scale(1.5);
     bottom: 0.75rem;
+  }
+}
+
+/* --------> Small screen styles: */
+
+@media screen and (max-width: 320px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .carouselContainer h3 {
+    font-size: 1rem;
+  }
+
+  .carouselContainer p {
+    font-size: 0.8rem;
+  }
+
+  .headerContainer h2 {
+    font-size: 2rem;
+  }
+
+  .projectTextAndImageContainer h3 {
+    font-size: 1.5rem;
+  }
+
+  .projectTextAndImageContainer p, .projectTextAndImageContainer li {
+    font-size: 0.8rem;
+  }
+
+  .projectTextAndImageContainer img {
+    width: 100%;
+  }
+
+  .projectButton {
+    margin: 0 0 1rem 1rem;
+  }
+
+  .flexCenter {
+    min-width: 5rem;
+  }
+
+  .footerContainer {
+    height: 30rem;
+    text-align: center;
+  }
+
+  .footerContainer ul {
+    flex-direction: column;
+  }
+
+  .footerContainer li {
+    margin-bottom: 2rem;
   }
 }
 
