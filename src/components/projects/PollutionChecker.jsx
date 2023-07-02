@@ -16,7 +16,6 @@ export function PollutionChecker({mode, modeStyles}) {
     let secondaryButton = modeStyles[mode].secondaryButton;
     let backgroundColor = modeStyles[mode].projectBackgroundThree;
     let color = modeStyles[mode].color;
-// I need to redo the pictures so that they're very long portrait
 
     return (
         <div style={{backgroundColor: backgroundColor, color: color}}>
