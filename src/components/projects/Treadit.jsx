@@ -2,8 +2,8 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import professor from '../../assets/click-a-bug1.png';
-import game from '../../assets/click-a-bug2.png';
+import treaditMain from '../../assets/treadit-main.jpg'
+import treaditCarousel from '../../assets/treadit-carousel.jpg'
 
 export function Treadit({mode, modeStyles}) {
 
@@ -22,18 +22,20 @@ export function Treadit({mode, modeStyles}) {
           <section className='projectSection'>
             <div className='projectTextAndImageContainer'>
               <div className='projectsTextContainer'>
-                <h3>Click-A-Bug</h3>
+                <h3>Treadit</h3>
                 <div>
-                  <p>An online game to test your reactions: can you save the professor from the bugs in his servers?</p>
+                  <p>A Reddit-replica for hikers. 
+                    Browse a list of the best outdoor & adventure sub-reddits, or create your own filters and scroll the results. 
+                    </p>
                   <ul>
-                    <li>Demo React project</li>
-                    <li>Complex state managed by Redux</li>
-                    <li>Client-side-rendering hosted on Netlify</li>
+                    <li>React and Redux</li>
+                    <li>Reddit API</li>
+                    <li>Jest and Cypress testing</li>
                   </ul>
                 </div>
               </div>
               <div className='projectPicMainContainer flex flexCenter'>
-                <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={treaditMain} alt='click a bug screenshot' />
               </div>
             </div>
             <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
@@ -47,30 +49,34 @@ export function Treadit({mode, modeStyles}) {
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton style={{backgroundColor: backgroundColor, color: color}}>
               <Modal.Title>
-                <h2>Click-a-bug</h2>
+                <h2>Treadit</h2>
               </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{backgroundColor: '#FAF9F6', color: '#202020'}}>
               <div className='modalTextContainer'>
                 <p>
-                  Click-a-bug is a single-page-application (SPA) project showcasing React and Redux managing an app with complex state.
-                  The app imitates a 'whack-a-mole' game, where users see a grid (of servers) and have to 'click' (or tap) on any bugs that appear. 
-                  There's a timer, a score and a lives-left metric. 
-                  Click on the wrong thing or take too long, and the bugs will take over!
-                  </p>
+                This SPA hosted on Netlify uses the Reddit JSON API to asynchronously fetch Reddit posts based on the user's filter and search parameters. 
+                It has a default filter applied, and contains personally selected sub-reddits that appeal to hikers, walkers and lovers of adventure and the great outdoors. 
+                The user interface is a feed of the post results and includes its content, media and engagement metrics. 
+                The pictures in these posts are very often beautifully scenic and dynamic by design. Unit, component and end-to-end (E2E) tests using Jest and Cypress frameworks.
+                </p>
                 <h4>TECHNOLOGIES USED:</h4>
                 <ul>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>NPM</li>
+                    <li>React / React Router DOM</li>
+                    <li>Redux / React-Redux / Redux Toolkit</li>
+                    <li>Reddit JSON API</li>
+                    <li>Cypress testing library</li>
+                    <li>Jest testing library</li>
+                    <li>Mock Server Worker</li>
                     <li>CSS</li>
+                    <li>NPM</li>
+                    <li>Git / Github</li>
                     <li>VSCode</li>
-                    <li>Git and Github</li>
                     <li>Netlify</li>
                 </ul>
               </div>
               <div className='modalPicContainer flexBoxCenter'>
-                <img className='projectPicMain' src={game} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={treaditCarousel} alt='click a bug screenshot' />
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>

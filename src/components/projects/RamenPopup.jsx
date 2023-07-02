@@ -2,8 +2,8 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import professor from '../../assets/click-a-bug1.png';
-import game from '../../assets/click-a-bug2.png';
+import ramenPopUpMain from '../../assets/ramen-pop-up-main.jpg'
+import ramenPopUpCarousel from '../../assets/ramen-pop-up-carousel.jpg'
 
 export function RamenPopup({mode, modeStyles}) {
     const [show, setShow] = useState(false);
@@ -21,18 +21,18 @@ export function RamenPopup({mode, modeStyles}) {
           <section className='projectSection'>
             <div className='projectTextAndImageContainer'>
               <div className='projectsTextContainer'>
-                <h3>Click-A-Bug</h3>
+                <h3>Ramen pop-up</h3>
                 <div>
-                  <p>An online game to test your reactions: can you save the professor from the bugs in his servers?</p>
+                  <p>A simple and stylish site to promote the upcoming locations and dates for Miura Anjin's pop-up ramen restaurant.</p>
                   <ul>
-                    <li>Demo React project</li>
-                    <li>Complex state managed by Redux</li>
-                    <li>Client-side-rendering hosted on Netlify</li>
+                    <li>React with Vite</li>
+                    <li>OpenLayers mapping library</li>
+                    <li>CSS animations</li>
                   </ul>
                 </div>
               </div>
               <div className='projectPicMainContainer flex flexCenter'>
-                <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={ramenPopUpMain} alt='click a bug screenshot' />
               </div>
             </div>
             <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
@@ -46,30 +46,31 @@ export function RamenPopup({mode, modeStyles}) {
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton style={{backgroundColor: backgroundColor, color: color}}>
               <Modal.Title>
-                <h2>Click-a-bug</h2>
+                <h2>Ramen pop-up</h2>
               </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{backgroundColor: '#FAF9F6', color: '#202020'}}>
               <div className='modalTextContainer'>
                 <p>
-                  Click-a-bug is a single-page-application (SPA) project showcasing React and Redux managing an app with complex state.
-                  The app imitates a 'whack-a-mole' game, where users see a grid (of servers) and have to 'click' (or tap) on any bugs that appear. 
-                  There's a timer, a score and a lives-left metric. 
-                  Click on the wrong thing or take too long, and the bugs will take over!
-                  </p>
+                Miura Anjin's pop-up ramen restaurant now has an online presence. 
+                This talented ramen chef is able to share this SPA when they want to spread the word about their latest pop-up restaurant date and location. 
+                This site is designed to be quick to update with new locations and dates. 
+                Changes to the remote repository on Github are updated on Netlify's servers within a few minutes. 
+                This app uses the Open Layers mapping library for an embedded map widget showing the location of the latest pop-up site. 
+                </p>
                 <h4>TECHNOLOGIES USED:</h4>
                 <ul>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>NPM</li>
+                    <li>React with Vite</li>
+                    <li>OpenLayers mapping library</li>
                     <li>CSS</li>
+                    <li>NPM</li>
+                    <li>Git / Github</li>
                     <li>VSCode</li>
-                    <li>Git and Github</li>
                     <li>Netlify</li>
                 </ul>
               </div>
               <div className='modalPicContainer flexBoxCenter'>
-                <img className='projectPicMain' src={game} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={ramenPopUpCarousel} alt='click a bug screenshot' />
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>

@@ -2,8 +2,8 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import professor from '../../assets/click-a-bug1.png';
-import game from '../../assets/click-a-bug2.png';
+import pollutionCheckerMain from '../../assets/pollution-checker-main.jpg';
+import pollutionCheckerCarousel from '../../assets/pollution-checker-carousel.jpg';
 
 
 export function PollutionChecker({mode, modeStyles}) {
@@ -23,18 +23,20 @@ export function PollutionChecker({mode, modeStyles}) {
           <section className='projectSection'>
             <div className='projectTextAndImageContainer'>
               <div className='projectsTextContainer'>
-                <h3>Click-A-Bug</h3>
+                <h3>Pollution-Checker</h3>
                 <div>
-                  <p>An online game to test your reactions: can you save the professor from the bugs in his servers?</p>
+                  <p>Check the latest air pollution levels near you at the click of a button, 
+                    and get practical health advice based on those levels recommended by the World Health Organisation (WHO).
+                    </p>
                   <ul>
-                    <li>Demo React project</li>
-                    <li>Complex state managed by Redux</li>
-                    <li>Client-side-rendering hosted on Netlify</li>
+                    <li>React / Redux</li>
+                    <li>World Air Quality Index (WAQI) API</li>
+                    <li>Dynamic programming</li>
                   </ul>
                 </div>
               </div>
               <div className='projectPicMainContainer flex flexCenter'>
-                <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={pollutionCheckerMain} alt='click a bug screenshot' />
               </div>
             </div>
             <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
@@ -48,30 +50,31 @@ export function PollutionChecker({mode, modeStyles}) {
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton style={{backgroundColor: backgroundColor, color: color}}>
               <Modal.Title>
-                <h2>Click-a-bug</h2>
+                <h2>Pollution-Checker</h2>
               </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{backgroundColor: '#FAF9F6', color: '#202020'}}>
               <div className='modalTextContainer'>
                 <p>
-                  Click-a-bug is a single-page-application (SPA) project showcasing React and Redux managing an app with complex state.
-                  The app imitates a 'whack-a-mole' game, where users see a grid (of servers) and have to 'click' (or tap) on any bugs that appear. 
-                  There's a timer, a score and a lives-left metric. 
-                  Click on the wrong thing or take too long, and the bugs will take over!
-                  </p>
+                This SPA hosted on Netlify uses the World Air Quality Index (WAQI) API to check the levels of local air pollution and provide health implications and advice based on the results. 
+                The appearance of the app is dynamic based on the local air quality at that time. 
+                The call to retrieve the pollution data is made when the app first loads, meaning the results are instantaneous when the user presses the button. 
+                There is a basic animation using sun and cloud SVGs which behaves differently based on the pollution results.
+                </p>
                 <h4>TECHNOLOGIES USED:</h4>
                 <ul>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>NPM</li>
+                    <li>React / React Router DOM</li>
+                    <li>Redux / React-Redux / Redux Toolkit</li>
+                    <li>World Air Quality Index (WAQI) API</li>
                     <li>CSS</li>
-                    <li>VSCode</li>
+                    <li>NPM</li>
                     <li>Git and Github</li>
+                    <li>VSCode</li>
                     <li>Netlify</li>
                 </ul>
               </div>
               <div className='modalPicContainer flexBoxCenter'>
-                <img className='projectPicMain' src={game} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={pollutionCheckerCarousel} alt='click a bug screenshot' />
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>

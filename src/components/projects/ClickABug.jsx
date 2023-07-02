@@ -2,8 +2,8 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import professor from '../../assets/click-a-bug1.png';
-import game from '../../assets/click-a-bug2.png';
+import clickABugMain from '../../assets/click-a-bug-main.jpg';
+import clickABugCarousel from '../../assets/click-a-bug-carousel.jpg';
 
 export function ClickABug({mode, modeStyles}) {
 
@@ -15,7 +15,6 @@ export function ClickABug({mode, modeStyles}) {
     const secondaryButton = modeStyles[mode].secondaryButton;
     const backgroundColor = modeStyles[mode].projectBackgroundOne;
     const color = modeStyles[mode].color;
-// I need to redo the pictures so that they're very long portrait
 
     return (
         <div style={{backgroundColor: backgroundColor, color: color}}>
@@ -26,14 +25,14 @@ export function ClickABug({mode, modeStyles}) {
                 <div>
                   <p>An online game to test your reactions: can you save the professor from the bugs in his servers?</p>
                   <ul>
-                    <li>Demo React project</li>
+                    <li>React web app game</li>
                     <li>Complex state managed by Redux</li>
-                    <li>Client-side-rendering hosted on Netlify</li>
+                    <li>Retro 80's style and design</li>
                   </ul>
                 </div>
               </div>
               <div className='projectPicMainContainer flex flexCenter'>
-                <img className='projectPicMain' src={professor} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={clickABugMain} alt='click a bug screenshot' />
               </div>
             </div>
             <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
@@ -53,24 +52,25 @@ export function ClickABug({mode, modeStyles}) {
             <Modal.Body style={{backgroundColor: '#FAF9F6', color: '#202020'}}>
               <div className='modalTextContainer'>
                 <p>
-                  Click-a-bug is a single-page-application (SPA) project showcasing React and Redux managing an app with complex state.
-                  The app imitates a 'whack-a-mole' game, where users see a grid (of servers) and have to 'click' (or tap) on any bugs that appear. 
-                  There's a timer, a score and a lives-left metric. 
-                  Click on the wrong thing or take too long, and the bugs will take over!
+                Click-a-bug is a single-page-application (SPA) showcasing React and Redux managing an app with a complex state. 
+                The app imitates a 'whack-a-mole' game, where users see a grid (of servers) and have to 'click' (or tap) on any bugs that appear
+                whilst avoiding clicking on anything else that pops up. 
+                Features include a countdown timer, a score and a lives-left metric. 
+                Click on the wrong thing or take too long and the bugs will take over!
                   </p>
                 <h4>TECHNOLOGIES USED:</h4>
                 <ul>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>NPM</li>
+                    <li>React / React Router DOM</li>
+                    <li>Redux / React Redux / Redux Toolkit</li>
                     <li>CSS</li>
+                    <li>NPM</li>
                     <li>VSCode</li>
                     <li>Git and Github</li>
                     <li>Netlify</li>
                 </ul>
               </div>
               <div className='modalPicContainer flexBoxCenter'>
-                <img className='projectPicMain' src={game} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={clickABugCarousel} alt='click a bug screenshot' />
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>

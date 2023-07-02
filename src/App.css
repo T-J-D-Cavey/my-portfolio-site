@@ -319,8 +319,6 @@ ul {
 
 /* --------> Tablet screen styles: */
 
-/* Consider adding negative margin on the container of the carousel so there's less of a gap in the middle */
-
 @media screen and (min-width: 700px) {
   .projectSection {
     padding: 7rem 0;
