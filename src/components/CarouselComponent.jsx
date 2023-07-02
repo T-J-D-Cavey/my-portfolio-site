@@ -1,6 +1,15 @@
-import Carousel from 'react-bootstrap/Carousel';
-import { useState } from 'react';
-import reactBlack from '../assets/reactCarouselTest.png';
+import Carousel from 'react-bootstrap/Carousel'
+import { useState } from 'react'
+import reactDark from '../assets/600x800-react-dark.png'
+import reactLight from '../assets/600x800-react-light.png'
+import bootstrapDark from '../assets/600x800-bootstrap-dark.png'
+import bootstrapLight from '../assets/600x800-bootstrap-light.png'
+import netlifyDark from '../assets/600x800-netlify-dark.png'
+import netlifyLight from '../assets/600x800-netlify-light.png'
+import gitDark from '../assets/600x800-git-dark.png'
+import gitLight from '../assets/600x800-git-light.png'
+import npmDark from '../assets/600x800-npm-dark.png'
+import npmLight from '../assets/600x800-npm-light.png'
 
 export function CarouselComponent({mode, modeStyles}) {
   const [index, setIndex] = useState(0);
@@ -12,12 +21,12 @@ export function CarouselComponent({mode, modeStyles}) {
   const backgroundColor = modeStyles[mode].background;
   const color = modeStyles[mode].color;
   const gradient = `linear-gradient(0deg, ${backgroundColor} 0%, #5D3FD3 100%)`;
-  // I need to change the other to reactWhite and create 4 other versions for each image:
-  const srcOne = mode === 'darkMode' ? reactBlack : reactBlack; 
+  const srcOne = mode === 'darkMode' ? reactDark : reactLight; 
+  const srcTwo = mode === 'darkMode' ? bootstrapDark : bootstrapLight; 
+  const srcThree = mode === 'darkMode' ? netlifyDark : netlifyLight; 
+  const srcFour = mode === 'darkMode' ? gitDark : gitLight; 
+  const srcFive = mode === 'darkMode' ? npmDark : npmLight; 
 
-  // I need to make a white image and a black img with relevant Icons centered at the  and change the src dynamically based on the mode
-
-  // I need to edit the text to include a mention of tsparticles for animation
   return (
     <div style={{background: gradient, color: color}}>
 
@@ -34,13 +43,13 @@ export function CarouselComponent({mode, modeStyles}) {
             />
           <Carousel.Caption >
             <h3 style={{color: color}}>Dynamic and Interactive</h3>
-            <p style={{color: color}}>Made with React, powered by Vite and Rollup. Animations by TSParticles</p>
+            <p style={{color: color}}>Made with React, powered by Vite and Rollup. Animations by TSParticles. Images via Gimp</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={srcOne}
+            src={srcTwo}
             alt="Second slide"
             />
 
@@ -52,7 +61,7 @@ export function CarouselComponent({mode, modeStyles}) {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={srcOne}
+            src={srcThree}
             alt="Third slide"
             />
 
@@ -65,7 +74,7 @@ export function CarouselComponent({mode, modeStyles}) {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={srcOne}
+            src={srcFour}
             alt="Fourth slide"
             />
           <Carousel.Caption>
@@ -76,7 +85,7 @@ export function CarouselComponent({mode, modeStyles}) {
           <Carousel.Item>
           <img
             className="d-block w-100"
-            src={srcOne}
+            src={srcFive}
             alt="Fifth slide"
             />
           <Carousel.Caption>

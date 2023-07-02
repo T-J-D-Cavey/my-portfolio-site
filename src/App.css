@@ -111,6 +111,8 @@ ul {
   font-size: 5rem;
 }
 
+/* Need to do: on very small screen sizes there is an issue with sizing leaving space on the right  */
+
 /* --------> Hero banner styles: */
 
 .heroBanner {
@@ -317,6 +319,8 @@ ul {
 
 /* --------> Tablet screen styles: */
 
+/* Consider adding negative margin on the container of the carousel so there's less of a gap in the middle */
+
 @media screen and (min-width: 700px) {
   .projectSection {
     padding: 7rem 0;
@@ -341,6 +345,14 @@ ul {
     align-items:start;
     height: 30rem;
     margin-right: 2rem;
+  }
+
+  .carouselContainer h3 {
+    margin-bottom: 3rem;
+  }
+
+  .carouselContainer p {
+    margin-bottom: 10rem;
   }
 }
 
