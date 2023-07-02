@@ -2,18 +2,15 @@ import Particles from 'react-tsparticles'
 import {loadFull} from 'tsparticles'
 import {useCallback} from 'react'
 
-export function ParticlesComponent({mode, modeStyles}) {
+export function ParticlesComponent() {
 
     const particlesLoaded = useCallback(async container => {
       const returnedContainer = await container;
     }, []);
-    
-    const backgroundColor = modeStyles[mode].background;
 
     const particlesInit = useCallback(async engine => {
         await loadFull(engine)
     }, []);
-// "image":"linear-gradient(0deg, #5D3FD3 0%, #3B00C5 100%)"
 
     return (
       <Particles

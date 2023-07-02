@@ -17,7 +17,7 @@ export function HeroBanner({mode, modeStyles}) {
                 <Button variant={ctaButton} className='projectButton'>
                   <a href='/#projectID'>View my work</a>
                 </Button>
-                <ParticlesComponent mode={mode} modeStyles={modeStyles} />
+                <ParticlesComponent />
             </div>
         </div>
     )
