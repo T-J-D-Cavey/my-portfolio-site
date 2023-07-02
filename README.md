@@ -72,7 +72,7 @@ The portfolio site itself has been developed using the following technologies:
 
 To run this portfolio site locally, please follow these steps:
 
-Clone this repository: git clone https://github.com/T-J-D-Cavey/my-portfolio-site
+Clone this repository: git clone https://github.com/T-J-D-Cavey/my-portfolio-site.git
 Navigate to the project directory: cd my-portfolio-site
 Install the dependencies: npm install
 Start the development server: npm run dev
