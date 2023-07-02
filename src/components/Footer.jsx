@@ -4,8 +4,6 @@ import linkedInIcon from '../assets/linkedInIcon.svg'
 
 export function Footer({mode, modeStyles}) {
 
-    // CSS styles on hover end up moving icons and text in footer on big screens. Needs fixing.
-
     const backgroundColor = modeStyles[mode].background;
     return (
         <div className='footerContainer flex flexColumn'>
@@ -14,7 +12,7 @@ export function Footer({mode, modeStyles}) {
                 <li><button style={{backgroundColor}}><a href='#heroBanner'><img src={upChevron} alt="Up arrow"></img></a></button></li>
                 <li><button style={{backgroundColor}}><a href='https://uk.linkedin.com/in/timothy-cavey-69b453169' target='_blank'><img src={linkedInIcon} alt="linkedIn Icon"></img></a></button></li>
             </ul>
-            <p>MIT license 2023</p>
+            <p>Made by Tim Cavey</p>
         </div>
     )
 }

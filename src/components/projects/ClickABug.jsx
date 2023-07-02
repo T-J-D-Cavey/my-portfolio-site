@@ -39,7 +39,7 @@ export function ClickABug({mode, modeStyles}) {
               See details
             </Button>
             <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
-                  <a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a>
+                  <a href='https://click-a-bug.netlify.app/' target='_blank'>Visit site</a>
             </Button>
           </section>
           {/* Modal: */}
@@ -78,7 +78,7 @@ export function ClickABug({mode, modeStyles}) {
                 Close
               </Button>
               <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
-                <a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a>
+                <a href='https://click-a-bug.netlify.app/' target='_blank'>Visit site</a>
               </Button>
             </Modal.Footer>
           </Modal>

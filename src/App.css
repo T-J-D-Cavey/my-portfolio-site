@@ -109,14 +109,12 @@ ul {
   font-size: 5rem;
 }
 
-/* Need to do: on very small screen sizes there is an issue with sizing leaving space on the right  */
-
 /* --------> Hero banner styles: */
 
 .heroBanner {
   position: relative;
   overflow: hidden;
-  z-index: 2; /* Add a higher z-index value */
+  z-index: 2; 
   width: 100%;
   height: 100vh;
   display: flex;
@@ -138,7 +136,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -10; /* Add a lower z-index value */
+  z-index: -2; 
 }
 
 /* --------> Carousel styles: */
@@ -184,7 +182,7 @@ ul {
   max-width: 80rem;
   margin: 0 auto;
 }
-/* we may want to add flex here as well, so we can control the width of the image container and have consistent width */
+
 .projectTextAndImageContainer {
   margin-bottom: 2rem;
 }
@@ -272,6 +270,7 @@ ul {
 
 .footerContainer ul {
   list-style: none;
+
 }
 
 .footerContainer p {
@@ -283,6 +282,7 @@ ul {
   border: none;
   padding: 0.25rem;
   border-radius: 6px;
+  border-bottom: 1px solid transparent;
 }
 
 .footerContainer button:hover {
@@ -376,6 +376,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 2rem;
   }
 
   .projectPicMain {

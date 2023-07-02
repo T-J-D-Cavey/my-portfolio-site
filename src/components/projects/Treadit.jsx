@@ -15,7 +15,6 @@ export function Treadit({mode, modeStyles}) {
     let secondaryButton = modeStyles[mode].secondaryButton;
     let backgroundColor = modeStyles[mode].projectBackgroundTwo;
     let color = modeStyles[mode].color;
-// I need to redo the pictures so that they're very long portrait
 
     return (
         <div style={{backgroundColor: backgroundColor, color: color}}>
@@ -42,7 +41,7 @@ export function Treadit({mode, modeStyles}) {
               See details
             </Button>
             <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
-                  <a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a>
+                  <a href='https://treadit.netlify.app/' target='_blank'>Visit site</a>
             </Button>
           </section>
           {/* Modal: */}
@@ -84,7 +83,7 @@ export function Treadit({mode, modeStyles}) {
                 Close
               </Button>
               <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
-                <a href='https://github.com/T-J-D-Cavey' target='_blank'>Visit site</a>
+                <a href='https://treadit.netlify.app/' target='_blank'>Visit site</a>
               </Button>
             </Modal.Footer>
           </Modal>
