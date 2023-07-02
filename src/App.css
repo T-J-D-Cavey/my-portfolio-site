@@ -247,13 +247,13 @@ ul {
 
 @keyframes moveAnimation {
   0% {
-    transform: translateY(20px) scale(2);
+    transform: translateY(20px) scale(1.8);
   }
   50% {
-    transform: translateY(80px) scale(2);
+    transform: translateY(80px) scale(1.8);
   }
   100% {
-    transform: translateY(20px) scale(2);
+    transform: translateY(20px) scale(1.8);
   }
 }
 

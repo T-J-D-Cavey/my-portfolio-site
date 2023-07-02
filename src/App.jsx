@@ -24,10 +24,10 @@ export function App() {
       secondaryButton: 'outline-light',
       color: '#FAF9F6',
       background: '#121212',
-      projectBackgroundOne: '#574734',
-      projectBackgroundTwo: '#333333',
+      projectBackgroundOne: '#003b49',
+      projectBackgroundTwo: '#5d3754',
       projectBackgroundThree: '#193652',
-      projectBackgroundFour: '#1D1F20',
+      projectBackgroundFour: '#1D2E2B',
     },
     lightMode: {
       ctaButton: 'dark',
@@ -35,9 +35,9 @@ export function App() {
       color: '#202020',
       background: '#fafafa',
       projectBackgroundOne: '#C3E6EB',
-      projectBackgroundTwo: '#F9F3F1',
-      projectBackgroundThree: '#E6FFE0',
-      projectBackgroundFour: '#FFFBEB',
+      projectBackgroundTwo: '#E1F8DC',
+      projectBackgroundThree: '#FFE7C7',
+      projectBackgroundFour: '#CAF1DE',
     },
   };
 
