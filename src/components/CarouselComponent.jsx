@@ -32,7 +32,7 @@ export function CarouselComponent({mode, modeStyles}) {
 
     <div className='carouselContainer'>
         <div style={{color: color}} className='headerContainer'>
-          <h2 id='projectID'>This Site</h2>
+          <h2 id='projectID'>This Site:</h2>
         </div>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>

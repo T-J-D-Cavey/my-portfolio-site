@@ -189,7 +189,6 @@ ul {
 
 .projectsTextContainer {
   padding: 2rem;
-  margin-bottom: 2rem;
 }
 
 .projectsTextContainer h3 {
@@ -206,10 +205,10 @@ ul {
   border-radius: 10%;
 }
 
-.projectPicMain {
+.projectPicMainContainer img {
   animation: moveAnimation 10s linear infinite;
   transform-origin: center;
-  width: 8rem;
+  width: 12rem;
 }
 
 .projectsTextContainer ul {
@@ -226,6 +225,10 @@ ul {
   overflow: hidden;
   display: flex;
   justify-content: center;
+}
+
+.modalPicContainer img {
+  width: 100%;
 }
 
 .modalTextContainer > * {
@@ -253,7 +256,6 @@ ul {
   font-size: 1.2rem;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
-
 }
 
 .seeDetails {
@@ -270,7 +272,6 @@ ul {
 
 .footerContainer ul {
   list-style: none;
-
 }
 
 .footerContainer p {
@@ -339,8 +340,8 @@ ul {
     font-size: 0.8rem;
   }
 
-  .projectTextAndImageContainer img {
-    width: 100%;
+  .projectPicMainContainer img {
+    width: 9rem;
   }
 
   .projectButton {
@@ -379,8 +380,11 @@ ul {
     margin-right: 2rem;
   }
 
-  .projectPicMain {
+  .projectPicMainContainer img {
     min-width: 15rem;
+  }
+
+  .projectPicMain {
     margin-right: 5rem;
     margin-left: 5rem;
   }
@@ -406,7 +410,7 @@ ul {
 /* --------> Desktop screen styles: */
 
 @media screen and (min-width: 1000px) {
-  .projectPicMain {
+  .projectPicMainContainer img {
     min-width: 20rem;
   }
 
