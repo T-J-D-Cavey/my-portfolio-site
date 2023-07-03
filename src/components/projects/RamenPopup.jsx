@@ -2,8 +2,8 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import ramenPopUpMain from '../../assets/ramen-pop-up-main.jpg'
-import ramenPopUpCarousel from '../../assets/ramen-pop-up-carousel.jpg'
+import ramenPopUpMain from '../../assets/ramen-pop-up-main-png.png';
+import ramenPopUpCarousel from '../../assets/ramen-pop-up-carousel-png.png';
 
 export function RamenPopup({mode, modeStyles}) {
     const [show, setShow] = useState(false);

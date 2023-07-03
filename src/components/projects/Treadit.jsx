@@ -2,8 +2,8 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import treaditMain from '../../assets/treadit-main.jpg'
-import treaditCarousel from '../../assets/treadit-carousel.jpg'
+import treaditMain from '../../assets/treadit-main-png.png';
+import treaditCarousel from '../../assets/treadit-carousel-png.png';
 
 export function Treadit({mode, modeStyles}) {
 

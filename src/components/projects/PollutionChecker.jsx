@@ -2,8 +2,8 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import pollutionCheckerMain from '../../assets/pollution-checker-main.jpg';
-import pollutionCheckerCarousel from '../../assets/pollution-checker-carousel.jpg';
+import pollutionCheckerMain from '../../assets/pollution-checker-main-png.png';
+import pollutionCheckerCarousel from '../../assets/pollution-checker-carousel-png.png';
 
 
 export function PollutionChecker({mode, modeStyles}) {

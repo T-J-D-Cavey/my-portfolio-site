@@ -2,8 +2,8 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import clickABugMain from '../../assets/click-a-bug-main.jpg';
-import clickABugCarousel from '../../assets/click-a-bug-carousel.jpg';
+import clickABugMain from '../../assets/click-a-bug-main-png.png';
+import clickABugCarousel from '../../assets/click-a-bug-carousel-png.png';
 
 export function ClickABug({mode, modeStyles}) {
 
