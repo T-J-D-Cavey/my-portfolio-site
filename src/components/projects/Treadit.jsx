@@ -13,7 +13,7 @@ export function Treadit({mode, modeStyles}) {
 
     let ctaButton = modeStyles[mode].ctaButton;
     let secondaryButton = modeStyles[mode].secondaryButton;
-    let backgroundColor = modeStyles[mode].projectBackgroundTwo;
+    let backgroundColor = modeStyles[mode].projectBackgroundFour;
     let color = modeStyles[mode].color;
 
     return (

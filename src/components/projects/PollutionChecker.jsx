@@ -14,7 +14,7 @@ export function PollutionChecker({mode, modeStyles}) {
 
     let ctaButton = modeStyles[mode].ctaButton;
     let secondaryButton = modeStyles[mode].secondaryButton;
-    let backgroundColor = modeStyles[mode].projectBackgroundThree;
+    let backgroundColor = modeStyles[mode].projectBackgroundFive;
     let color = modeStyles[mode].color;
 
     return (

@@ -2,10 +2,10 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import clickABugMain from '../../assets/click-a-bug-main-png.png';
-import clickABugCarousel from '../../assets/click-a-bug-carousel-png.png';
+import weddingMain from '../../assets/wedding4.png';
+import weddingCarousel from '../../assets/wedding5.png';
 
-export function ClickABug({mode, modeStyles}) {
+export function WeddingSite({mode, modeStyles}) {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -13,7 +13,7 @@ export function ClickABug({mode, modeStyles}) {
 
     const ctaButton = modeStyles[mode].ctaButton;
     const secondaryButton = modeStyles[mode].secondaryButton;
-    const backgroundColor = modeStyles[mode].projectBackgroundThree;
+    const backgroundColor = modeStyles[mode].projectBackgroundOne;
     const color = modeStyles[mode].color;
 
     return (
@@ -21,18 +21,18 @@ export function ClickABug({mode, modeStyles}) {
           <section className='projectSection'>
             <div className='projectTextAndImageContainer'>
               <div className='projectsTextContainer'>
-                <h3>Click-A-Bug</h3>
+                <h3>My Wedding site</h3>
                 <div>
-                  <p>An online game to test your reactions: can you save the professor from the bugs in his servers?</p>
+                  <p>Find dates and details of my wedding, RSVP and contribute to our honeymoon fund.</p>
                   <ul>
-                    <li>React web app game</li>
-                    <li>Complex state managed by Redux</li>
-                    <li>Retro 80's style and design</li>
+                    <li>English / Mandarin conversion</li>
+                    <li>Framer Motion animations</li>
+                    <li>PayPal SDK</li>
                   </ul>
                 </div>
               </div>
               <div className='projectPicMainContainer flex flexCenter'>
-                <img className='projectPicMain' src={clickABugMain} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={weddingMain} alt='click a bug screenshot' />
               </div>
             </div>
             <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
@@ -46,31 +46,36 @@ export function ClickABug({mode, modeStyles}) {
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton style={{backgroundColor: backgroundColor, color: color}}>
               <Modal.Title>
-                <h2>Click-a-bug</h2>
+                <h2>My Wedding site</h2>
               </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{backgroundColor: '#FAF9F6', color: '#202020'}}>
               <div className='modalTextContainer'>
-                <p>
-                Click-a-bug is a single-page-application (SPA) showcasing React and Redux managing an app with a complex state. 
-                The app imitates a 'whack-a-mole' game, where users see a grid (of servers) and have to 'click' (or tap) on any bugs that appear
-                whilst avoiding clicking on anything else that pops up. 
-                Features include a countdown timer, a score and a lives-left metric. 
-                Click on the wrong thing or take too long and the bugs will take over!
-                  </p>
+                <p>This site will be shared with the friends and family of my fiance and myself, 
+                    with details of our English and Malaysian weddings.
+                    It outlines dates, locations, plans for each day, and RSVP google forms, 
+                    as well as a PayPal button which allows the invited guest to contribute to 
+                    our honeymoon fund. This site is written in English and Mandarin, 
+                    and uses the i18next library to allow the user to switch language at the tap of a button. 
+                    The site is password protectect, using local storage to ensure the guest only has to submit
+                    the password correctly once. Wedding bells sound effects will great your first visit,
+                    and framer motion scroll animations with bootstrap modals ensure a pleasant visit.
+                </p>
                 <h4>TECHNOLOGIES USED:</h4>
                 <ul>
-                    <li>React / React Router DOM</li>
+                    <li>TypeScript / React</li>
+                    <li>Vite / Rollup</li>
                     <li>Redux / React Redux / Redux Toolkit</li>
-                    <li>CSS</li>
-                    <li>NPM</li>
+                    <li>React Bootstrap</li>
+                    <li>Framer Motion</li>
+                    <li>i18Next</li>
                     <li>VSCode</li>
                     <li>Git and Github</li>
                     <li>Netlify</li>
                 </ul>
               </div>
               <div className='modalPicContainer flexBoxCenter'>
-                <img className='projectPicMain' src={clickABugCarousel} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={weddingCarousel} alt='click a bug screenshot' />
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>

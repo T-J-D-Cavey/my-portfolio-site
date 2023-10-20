@@ -12,7 +12,7 @@ export function RamenPopup({mode, modeStyles}) {
 
     let ctaButton = modeStyles[mode].ctaButton;
     let secondaryButton = modeStyles[mode].secondaryButton;
-    let backgroundColor = modeStyles[mode].projectBackgroundFour;
+    let backgroundColor = modeStyles[mode].projectBackgroundSix;
     let color = modeStyles[mode].color;
 
     return (
