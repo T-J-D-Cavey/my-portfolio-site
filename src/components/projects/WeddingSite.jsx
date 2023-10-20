@@ -32,7 +32,7 @@ export function WeddingSite({mode, modeStyles}) {
                 </div>
               </div>
               <div className='projectPicMainContainer flex flexCenter'>
-                <img className='projectPicMain' src={weddingMain} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={weddingMain} alt='wedding site screenshot' />
               </div>
             </div>
             <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
@@ -75,7 +75,7 @@ export function WeddingSite({mode, modeStyles}) {
                 </ul>
               </div>
               <div className='modalPicContainer flexBoxCenter'>
-                <img className='projectPicMain' src={weddingCarousel} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={weddingCarousel} alt='Wedding site screenshot' />
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>
