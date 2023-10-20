@@ -32,14 +32,14 @@ export function XChange({mode, modeStyles}) {
                 </div>
               </div>
               <div className='projectPicMainContainer flex flexCenter'>
-                <img className='projectPicMain' src={xChangeMain} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={xChangeMain} alt='xChange app screenshot' />
               </div>
             </div>
             <Button variant={secondaryButton} onClick={handleShow} className='projectButton seeDetails'>
               See details
             </Button>
             <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
-                  <a href='https://treadit.netlify.app/' target='_blank'>Visit site</a>
+                  <a href='https://xchange-cavey-app.netlify.app/' target='_blank'>Visit site</a>
             </Button>
           </section>
           {/* Modal: */}
@@ -71,7 +71,7 @@ export function XChange({mode, modeStyles}) {
                 </ul>
               </div>
               <div className='modalPicContainer flexBoxCenter'>
-                <img className='projectPicMain' src={xChangeCarousel} alt='click a bug screenshot' />
+                <img className='projectPicMain' src={xChangeCarousel} alt='xChange app screenshot' />
               </div>
             </Modal.Body>
             <Modal.Footer style={{backgroundColor: backgroundColor, color: color}}>
@@ -79,7 +79,7 @@ export function XChange({mode, modeStyles}) {
                 Close
               </Button>
               <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
-                <a href='https://treadit.netlify.app/' target='_blank'>Visit site</a>
+                <a href='https://xchange-cavey-app.netlify.app/' target='_blank'>Visit site</a>
               </Button>
             </Modal.Footer>
           </Modal>

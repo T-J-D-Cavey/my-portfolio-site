@@ -39,7 +39,7 @@ export function WeddingSite({mode, modeStyles}) {
               See details
             </Button>
             <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
-                  <a href='https://click-a-bug.netlify.app/' target='_blank'>Visit site</a>
+                  <a href='https://timandcarmen-ourwedding2024.netlify.app/' target='_blank'>Visit site</a>
             </Button>
           </section>
           {/* Modal: */}
@@ -83,7 +83,7 @@ export function WeddingSite({mode, modeStyles}) {
                 Close
               </Button>
               <Button variant={ctaButton} onClick={handleClose} className='projectButton'>
-                <a href='https://click-a-bug.netlify.app/' target='_blank'>Visit site</a>
+                <a href='https://timandcarmen-ourwedding2024.netlify.app/' target='_blank'>Visit site</a>
               </Button>
             </Modal.Footer>
           </Modal>
