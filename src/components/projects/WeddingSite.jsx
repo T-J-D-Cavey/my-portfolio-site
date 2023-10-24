@@ -2,8 +2,8 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-import weddingMain from "../../assets/click-a-bug-main-png.png";
-import weddingCarousel from "../../assets/click-a-bug-main-png.png";
+import weddingMain from "../../assets/wedding4.png";
+import weddingCarousel from "../../assets/wedding5.png";
 
 export function WeddingSite({ mode, modeStyles }) {
   const [show, setShow] = useState(false);
