@@ -1,5 +1,4 @@
 
-import { XChange } from "./projects/XChange"
 import { ClickABug } from "./projects/ClickABug"
 import { Treadit } from "./projects/Treadit"
 import { PollutionChecker } from "./projects/PollutionChecker"
@@ -15,7 +14,6 @@ export function ProjectContainer({mode, modeStyles}) {
             <div style={{backgroundColor: backgroundColor, color: color}} className='headerContainer'>
                 <h2>Projects:</h2>
             </div>
-            <XChange mode={mode} modeStyles={modeStyles} />
             <ClickABug mode={mode} modeStyles={modeStyles} />
             <Treadit mode={mode} modeStyles={modeStyles} />
             <PollutionChecker mode={mode} modeStyles={modeStyles} />
