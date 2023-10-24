@@ -2,8 +2,8 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-import xChangeMain from "../../assets/xChange1.png";
-import xChangeCarousel from "../../assets/xChange3.png";
+import xChangeMain from "../../assets/click-a-bug-main-png.png";
+import xChangeCarousel from "../../assets/click-a-bug-main-png.png";
 
 export function XChange({ mode, modeStyles }) {
   const [show, setShow] = useState(false);
