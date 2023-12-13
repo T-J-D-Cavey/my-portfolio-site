@@ -15,7 +15,7 @@ export function HeroBanner({mode, modeStyles}) {
                     To see my new portfolio site...
                 </h1>
                 <Button variant={ctaButton} className='projectButton'>
-                  <a href='tim-cavey-portfolio.vercel.app'>Click here</a>
+                  <a href='https://tim-cavey-portfolio.vercel.app'>Click here</a>
                 </Button>
                 <ParticlesComponent />
             </div>
