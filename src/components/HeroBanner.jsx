@@ -10,12 +10,12 @@ export function HeroBanner({mode, modeStyles}) {
     return (
         <div className='heroBanner' id='heroBanner'>
             <div className='hero-container'>
-                <h1>Hi, I'm <span style={{color: nameStyle}}>Tim Cavey</span>.
+                <h1>This site has been <span style={{color: nameStyle}}>replaced</span>.
                     <br />
-                    A front-end web developer.
+                    To see my new portfolio site...
                 </h1>
                 <Button variant={ctaButton} className='projectButton'>
-                  <a href='/#projectID'>View my work</a>
+                  <a href='tim-cavey-portfolio.vercel.app'>Click here</a>
                 </Button>
                 <ParticlesComponent />
             </div>
